@@ -1,0 +1,178 @@
+@import url(../common/common.css);
+@import url(../common/hearder.css);
+@import url(../common/footer.css);
+body {
+  font-size: 16px; }
+
+.nav_box {
+  width: 100%;
+  height: 0.76rem;
+  background-color: #d30707; }
+  .nav_box .nav {
+    width: 12rem;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0; }
+    .nav_box .nav li {
+      width: auto;
+      height: 100%;
+      line-height: 0.76rem;
+      display: inline-block;
+      padding: 0 0.2rem; }
+      .nav_box .nav li:nth-child(1) {
+        padding-left: 0; }
+      .nav_box .nav li a {
+        color: white;
+        font-size: 0.2rem; }
+        .nav_box .nav li a span {
+          width: 100%;
+          height: 90%;
+          border-bottom: 3px solid transparent;
+          display: inline-block; }
+
+.news_content {
+  width: 100%;
+  height: 3.42rem;
+  margin-top: 0.17rem; }
+  .news_content .news {
+    width: 12rem;
+    height: 100%;
+    margin: 0 auto; }
+    .news_content .news .news_only {
+      width: 8.91rem;
+      height: 100%;
+      float: left;
+      border: 1px solid #d6d6d6;
+      padding: 0.17rem 0.1rem 0.13rem 0.1rem; }
+      .news_content .news .news_only .left_news {
+        float: left;
+        width: 3.54rem;
+        height: 100%; }
+        .news_content .news .news_only .left_news .left_news_back {
+          width: 100%;
+          height: 100%;
+          background-color: #E8E8E8;
+          padding: 0.1rem 0.08rem; }
+          .news_content .news .news_only .left_news .left_news_back img {
+            width: 100%;
+            height: 100%; }
+      .news_content .news .news_only .right_news {
+        width: 5.13rem;
+        height: 100%;
+        padding-left: 0.35rem;
+        float: right;
+        vertical-align: top; }
+        .news_content .news .news_only .right_news .select_button {
+          width: 3.3rem;
+          height: 0.36rem;
+          margin: 0 auto;
+          box-sizing: unset;
+          font-size: 0;
+          border: 1px solid #BABABA;
+          border-radius: 5px;
+          border-top: none;
+          border-right: none;
+          overflow: hidden;
+          margin-bottom: 0.28rem; }
+          .news_content .news .news_only .right_news .select_button li {
+            width: 1.1rem;
+            height: 100%;
+            display: inline-block;
+            border-right: 1px solid #BABABA;
+            box-shadow: 0px 5px 0px #989898;
+            background: linear-gradient(#FBFBFB, #C8C8C7); }
+            .news_content .news .news_only .right_news .select_button li.active {
+              box-shadow: 0px -5px 0px #989898;
+              background: linear-gradient(#C8C8C7, #FBFBFB); }
+              .news_content .news .news_only .right_news .select_button li.active p {
+                color: #d30707; }
+            .news_content .news .news_only .right_news .select_button li a {
+              display: inline-block;
+              width: 100%;
+              height: 100%; }
+            .news_content .news .news_only .right_news .select_button li p {
+              color: #666666;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              line-height: 2;
+              font-size: 0.16rem; }
+        .news_content .news .news_only .right_news .swiper-container {
+          width: 100%;
+          height: 2.48rem; }
+          .news_content .news .news_only .right_news .swiper-container .select_content {
+            width: 100%;
+            height: 100%; }
+            .news_content .news .news_only .right_news .swiper-container .select_content li {
+              width: 100%;
+              height: 100%; }
+              .news_content .news .news_only .right_news .swiper-container .select_content li ul li {
+                width: 100%;
+                height: 0.27rem;
+                font-size: 0; }
+                .news_content .news .news_only .right_news .swiper-container .select_content li ul li .cir {
+                  vertical-align: top;
+                  margin-top: 0.12rem; }
+                .news_content .news .news_only .right_news .swiper-container .select_content li ul li a {
+                  border-bottom: 1px dashed #bababa;
+                  height: 100%;
+                  display: inline-block;
+                  font-size: 0.14rem;
+                  line-height: 2;
+                  padding-left: 0.1rem;
+                  color: #333333;
+                  width: calc(100% - 0.04rem); }
+                  .news_content .news .news_only .right_news .swiper-container .select_content li ul li a:hover p {
+                    color: #d30707;
+                    text-decoration: underline; }
+                    .news_content .news .news_only .right_news .swiper-container .select_content li ul li a:hover p span {
+                      color: #333333; }
+                  .news_content .news .news_only .right_news .swiper-container .select_content li ul li a div p {
+                    color: inherit;
+                    font-size: inherit;
+                    height: 100%;
+                    float: left;
+                    width: 3.6rem; }
+                  .news_content .news .news_only .right_news .swiper-container .select_content li ul li a div span {
+                    float: right; }
+    .news_content .news .notice {
+      float: right;
+      width: 2.99rem;
+      height: 100%;
+      border: 1px solid #dddddd; }
+      .news_content .news .notice .notice_title {
+        width: 100%;
+        height: 0.33rem;
+        border-bottom: 1px solid #dddddd;
+        background: linear-gradient(#FBFBFB, #f0f0f0);
+        padding: 0.05rem 0.13rem 0.05rem 0.06rem; }
+        .news_content .news .notice .notice_title P {
+          float: left;
+          width: 1.21rem;
+          height: 0.26rem;
+          font-size: 0.16rem;
+          color: white;
+          text-align: center;
+          line-height: 1.5;
+          background-color: red; }
+        .news_content .news .notice .notice_title span {
+          float: right;
+          width: 0.4rem;
+          height: 0.13rem; }
+      .news_content .news .notice .notice_list {
+        width: 100%;
+        height: calc(100% - 0.33rem);
+        padding: 0.06rem 0.06rem 0.02rem 0.05rem; }
+        .news_content .news .notice .notice_list ul {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #d7d7d7;
+          padding: 0.2rem 0.3rem 0.23rem 0.1rem; }
+          .news_content .news .notice .notice_list ul li {
+            width: 100%;
+            height: 0.3rem; }
+            .news_content .news .notice .notice_list ul li a p {
+              width: 100%;
+              height: 100%;
+              font-size: 0.14rem;
+              color: #333333; }
