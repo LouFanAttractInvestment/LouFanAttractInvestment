@@ -48,6 +48,7 @@
 .recommend ul li a{
 	position:relative;
 	padding-left:2em;
+	font-size:0.18rem;
 }
 .recommend ul li a:before{
 	content:'';

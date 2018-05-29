@@ -33,11 +33,13 @@
 	font-size:inherit;
 	color:inherit; 
 	float:left;
+	font-size:0.18rem;
 }
 .breadcrumb p span{
 	font-size:inherit;
 	color:inherit; 
 	float:left;
+	font-size:0.18rem;
 }
 .breadcrumb p a.current{
 	font-size:inherit;
