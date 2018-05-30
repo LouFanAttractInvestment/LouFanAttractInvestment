@@ -74,6 +74,9 @@
 	height:0.7rem;
 	line-height:0.7rem;
 }
+.mainwrap .right p.title.active{
+	display:block;
+}
 .mainwrap >.right >p.title span{
 	padding-left:0.14rem;
 	border-left:4px solid #666;
