@@ -53,12 +53,12 @@
 	margin:0.2rem auto 0;
 	overflow: hidden;
 }
-.mainwrap .left{
+.mainwrap >.left{
 	width:3.9rem;
 	height:auto;
 	float:left;
 }
-.mainwrap .right{
+.mainwrap >.right{
 	overflow: hidden;
 	width:auto;
 	height:auto;
@@ -68,13 +68,13 @@
 	padding:0 0.2rem;
 	position:relative;
 }
-.mainwrap .right p.title{
+.mainwrap >.right >p.title{
 	border-bottom:1px solid #d4d4d4;
 	background-color:white;
 	height:0.7rem;
 	line-height:0.7rem;
 }
-.mainwrap .right p.title span{
+.mainwrap >.right >p.title span{
 	padding-left:0.14rem;
 	border-left:4px solid #666;
 	height:0.18rem;
@@ -85,6 +85,15 @@
 	color:#666;
 	font-size:0.18rem;
 }
-.mainwrap .right .main{
+.mainwrap >.right >.main{
 	padding:0.05rem 0 0.7rem;
+}
+html{
+	overflow-y:scroll; 
+}
+.amap-logo{
+	display: none!important;
+}
+.amap-copyright{
+	display: none!important;
 }

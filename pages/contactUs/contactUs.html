@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>娄烦招商引资-新闻动态</title>
-    <link rel="stylesheet" href="../../assets/styles/newsInformation/newsInformation.css">
+    <title>娄烦招商引资-联系我们</title>
+    <link rel="stylesheet" href="../../assets/styles/contactUs/contactUs.css">
     <script src="../../assets/scripts/jquery1.7/jQuery1.7.1.min.js"></script>
-    <script src="../../assets/scripts/paging/paging.js"></script>
 </head>
 
 <body>
@@ -57,13 +56,13 @@
             <li>
                 <a href="../../pages/investmentActivities/investmentActivities.html"><span>招商活动</span></a>
             </li>
-            <li class="current">
+            <li>
                 <a href="../../pages/newsInformation/newsInformation.html"><span>新闻动态</span></a>
             </li>
             <li>
                 <a href="../../pages/enterpriseDisplay/enterpriseDisplay.html"><span>企业展示</span></a>
             </li>
-            <li>
+            <li class="current">
                 <a href="../../pages/investmentGuide/investmentGuide.html"><span>投资指南</span></a>
             </li>
             <li>
@@ -80,7 +79,7 @@
             <span>您当前所在位置:</span>        
             <a href="../../index.html">首页</a>
             <span class="breadcrumbIcon2" style="background-image:url(../../assets/images/all/breadicon2.png);"></span>
-            <a href="javascript:;" class="current">新闻动态</a>
+            <a href="javascript:;" class="current">投资指南</a>
         </p>
     </div>
     <!-- 面包屑结束 -->
@@ -91,17 +90,14 @@
     <!-- 左边侧导航开始 -->
             <div class="asideNav">
                 <p class="title"  style="background-image:url(../../assets/images/all/asideNavtitle.png);">
-                    <span>新闻动态</span>
+                    <span>联系我们</span>
                 </p>
                 <ul>
+                    <li>
+                        <a href="../../pages/investmentGuide/investmentGuide.html">投资指南</a>
+                    </li>
                     <li class="current">
-                        <a href="../../pages/newsInformation/newsInformation.html">新闻动态</a>
-                    </li>
-                    <li>
-                        <a href="../../pages/policy/policy.html">招商政策</a>
-                    </li>
-                    <li>
-                        <a href="../../pages/investmentActivities/investmentActivities.html">招商活动</a>
+                        <a href="../../pages/contactUs/contactUs.html">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -145,78 +141,28 @@
         <div class="right">
     <!-- 右边标题开始 -->
             <p class="title">
-                <span>新闻动态</span>
+                <span>联系我们</span>
             </p>
     <!-- 右边标题结束 -->
     <!-- 右边主体开始 -->
             <div class="main">
     <!-- 内容看着填吧 -->
-                <ul>
-                    <li>
-                        <a href="">国务院关于北部湾城市群发展规划的批复</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院办公厅关于对真抓实干成效明显地方加大激励支持力度的通知 国办发[2016]82号</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院关于北部湾城市群发展规划的批复</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院办公厅关于对真抓实干成效明显地方加大激励支持力度的通知 国办发[2016]82号</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院关于北部湾城市群发展规划的批复</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院办公厅关于对真抓实干成效明显地方加大激励支持力度的通知 国办发[2016]82号</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院关于北部湾城市群发展规划的批复</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院办公厅关于对真抓实干成效明显地方加大激励支持力度的通知 国办发[2016]82号</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院关于北部湾城市群发展规划的批复</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                    <li>
-                        <a href="">国务院办公厅关于对真抓实干成效明显地方加大激励支持力度的通知 国办发[2016]82号</a>
-                        <span class="updatatime">2018-5-12</span>
-                    </li>
-                </ul>
+                <div class="mapwrap" id="map">
+                    
+                </div>
+                <div class="contact">
+                    <p class="title">
+                        娄烦县招商引资一站式交易服务平台
+                    </p>
+                    <div class="contactbox">
+                        <p>电话：0351-5326498</p>
+                        <p>邮箱：lfxhaixin@sina.com</p>
+                        <p class="full">地址：山西省太原市娄烦县南大街娄烦县招商引资项目管理办公室</p>
+                    </div>
+                </div>
     <!-- 内容填充完毕 -->
             </div>
     <!-- 右边主体结束 -->
-    <!-- 右边分页开始 -->
-            <div class="pagingwrap">
-                
-            </div>
-            <script>
-                $('.pagingwrap').lemonPaging({
-                 'url':"",//ajax请求地址为空时不发送ajax
-                 'total':217,//总数据条数
-                 'page_size':10,//每页数据条数
-                 'pages':7,//分页可显示页码数量
-                 'pre_next':'true',//默认显示上一页下一页
-                 'searchable':'false',//默认带跳转输入框
-                 'successcallback':function(data,current_page){
-                     console.log(data,current_page);
-                 },//列表数据填充容器
-                 'errorcallback':function(data,current_page){
-                     console.log(data,current_page);
-                 },//列表数据填充容器
-                });
-            </script>
-    <!-- 右边分页结束 -->
         </div>
     <!-- 右边结束 -->
     </div>
@@ -281,5 +227,10 @@
     <!--脚结束-->
 
 </body>
-
+    <!--地图相关内容-->
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.2&key=3a5b4089cae705f26f4bacf2cef24e29"></script>
+    <!--<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>-->
+    <script src="../../assets/scripts/map/map_pages.js"></script>
 </html>

@@ -17,25 +17,29 @@ $.fn.lemonPaging = function(options) {
     };
     var settings = $.extend({},defaults, options);//将一个空对象做为第一个参数
     function initPaging(url){
-		$.ajax({
-			type:"GET",
-			url:url,//分页数据的请求地址
-			dataType:'json',//省去了字符串转化json
-			data:{current_page:1},
-			success:function(data){
-				settings.total=data.total;
-				settings.page_size=data.page_size;
-				createPaging(settings.total,settings.page_size,data.current_page,settings.pages,settings.pre_next,settings.searchable);
-				settings.successcallback(data,data.current_page);
-			},
-			error:function(data){
-				if(data.status==404){
-					console.log('连接不到网络！启用本地默认数据模拟');
-					createPaging(settings.total,settings.page_size,1,settings.pages,settings.pre_next,settings.searchable);
-					settings.errorcallback(data,1);
+    	if(!url){
+    		createPaging(settings.total,settings.page_size,1,settings.pages,settings.pre_next,settings.searchable);
+    	}else{
+			$.ajax({
+				type:"GET",
+				url:url,//分页数据的请求地址
+				dataType:'json',//省去了字符串转化json
+				data:{current_page:1},
+				success:function(data){
+					settings.total=data.total;
+					settings.page_size=data.page_size;
+					createPaging(settings.total,settings.page_size,data.current_page,settings.pages,settings.pre_next,settings.searchable);
+					settings.successcallback(data,data.current_page);
+				},
+				error:function(data){
+					if(data.status==404){
+						console.log('连接不到网络！启用本地默认数据模拟');
+						createPaging(settings.total,settings.page_size,1,settings.pages,settings.pre_next,settings.searchable);
+						settings.errorcallback(data,1);
+					}
 				}
-			}
-		})
+			})
+    	}
 	}
 	function createPaging(total,pagesize,current_page,pages,pre_next,searchable){
 		var first_page=1;
@@ -130,21 +134,25 @@ $.fn.lemonPaging = function(options) {
 	}
 	function changePage(current_page){
 		createPaging(settings.total,settings.page_size,current_page,settings.pages,settings.pre_next,settings.searchable);
-		$.ajax({
-			type:"GET",
-			url:settings.url,//分页数据的请求地址
-			dataType:'json',//省去了字符串转化json
-			data:{current_page:current_page},
-			success:function(data){
-				settings.successcallback(data,current_page);
-			},
-			error:function(data){
-				if(data.status==404){
-					console.log('连接不到网络！启用本地默认数据模拟');
-					settings.errorcallback(data,current_page);
+		if(!settings.url){
+			settings.successcallback('我没用ajax',current_page);
+		}else{
+			$.ajax({
+				type:"GET",
+				url:settings.url,//分页数据的请求地址
+				dataType:'json',//省去了字符串转化json
+				data:{current_page:current_page},
+				success:function(data){
+					settings.successcallback(data,current_page);
+				},
+				error:function(data){
+					if(data.status==404){
+						console.log('连接不到网络！启用本地默认数据模拟');
+						settings.errorcallback(data,current_page);
+					}
 				}
-			}
-		})
+			})
+		}
 	}
 	initPaging(settings.url);
 }
